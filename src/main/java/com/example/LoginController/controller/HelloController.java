@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/hello")
-    public String helloController(){
+    public String helloController() {
         return "hello";
     }
 
     @GetMapping("/admin")
     @Secured("/ADMIN")
-    public String helloAdmin(){
+    public String helloAdmin() {
         return "admin";
     }
 }

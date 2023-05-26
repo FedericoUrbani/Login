@@ -32,6 +32,7 @@ public class WebSecurityConfig {
                         .roles("ADMIN").build());
         return manager;
     }
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
